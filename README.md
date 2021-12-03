@@ -10,4 +10,5 @@ Displaying current date using moment.js was the next step. Used moment.js format
 # Step 3
 Calender was color coded to show the difference between present, past and future time. Used the if else condiditons for this step. Grey color means the event/time is in the past. Green color is used to display the future events or time and red color is used to display the present time. 
 
-
+# step 4 - Local storage 
+When I enter the description on the text area it needs to get stored in the local storage on clicking the save button. 

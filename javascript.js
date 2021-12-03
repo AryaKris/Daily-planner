@@ -15,17 +15,6 @@ $(".time-block").each(function (index) {
     }
 });
 
-// when the savebutton is clicked, wait for the event of the click
-// $(".saveBtn").each(function (index) {
-//     $(this).on("click", function (event) {
-//         console.log($(this).siblings(".description").val())
-//     })
-
-// });
-// get the corresponding parent id
-// var id = use that id as the key for the localstorage key: 14
-// var description = use the id to get the value of the text from the class description
-// localStorage.setItem(id, JSON.stringify(description));
 
 $('.saveBtn').on('click', function () {
     var time = ($(this).parent().attr('id'));
