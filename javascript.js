@@ -28,20 +28,15 @@ $('.saveBtn').on('click', function () {
 
 
 window.onload = function () {
-    // console.log("function executed: ", localStorage.getItem(9));
+    
     // for each of the id in the loop, retrieve the corresponding value using getItem()
     for (var i=8; i<=17; i++){
-      var description = localStorage.getItem (i);
-      
-        $("#id").children("description").val(localStorage.getItem("id"));
-      
+      var description = localStorage.getItem(i);
+        let test = `#${i} > .description`
+        $(test).val(description);
 
-        // if the value is not empty:
-            // get the html element for the corresponding id 
-            // apply that value to html description
-        // if the value is empty
-            // get the html element for the corresponding id 
-            // put the description value as empty
+        
+    
 
 
     }
