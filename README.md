@@ -17,4 +17,4 @@ When I enter the description on the text area it needs to get stored in the loca
 https://aryakris.github.io/Daily-planner/
 
 ## Image 
-![alt text]
+![alt text](https://github.com/AryaKris/Daily-planner/blob/main/Screen%20Shot%202021-12-04%20at%2022.45.52.png?raw=true)
