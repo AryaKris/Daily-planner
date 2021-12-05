@@ -20,25 +20,22 @@ $('.saveBtn').on('click', function () {
     var time = ($(this).parent().attr('id'));
     var description = $(this).siblings(".description").val();
     localStorage.setItem(time, JSON.stringify(description));
-   console.log(description);
 });
 
 // when windows logs call this function 
 // inside the function, call a loop from 8 to 17 to get the values from localstorage
-
-
 window.onload = function () {
-    
-    // for each of the id in the loop, retrieve the corresponding value using getItem()
     for (var i=8; i<=17; i++){
-      var description = localStorage.getItem(i);
+        var value = localStorage.getItem(i);
+        // if condition if the value is not null, replace the ""
+        if(value!=null){
+        var description = value.replace(/['"]+/g, '');
+        }else {
+            var description = null;
+        }
+        // else the value is null keep var description = null
         let test = `#${i} > .description`
         $(test).val(description);
-
-        
-    
-
-
     }
-    // stop the loop when it reaches 17.
+
 }
