@@ -12,3 +12,6 @@ Calender was color coded to show the difference between present, past and future
 
 # step 4 - Local storage 
 When I enter the description on the text area it needs to get stored in the local storage on clicking the save button. 
+
+## Image before deployment
+![alt text](Screen Shot 2021-12-04 at 00.59.18.png)
